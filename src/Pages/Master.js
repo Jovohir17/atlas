@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from './Main'
+import Main from '../Components/Main'
 
 function Master() {
   return (
     <>
-    <Main/>
+     <Main/>
     </>
   )
 }
