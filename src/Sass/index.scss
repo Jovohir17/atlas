@@ -72,8 +72,35 @@ html{
                 padding-block: 60px;
                 margin-inline: 79px;
                 padding-inline: 0;
+                @media (min-width: 0px) and (max-width: 360px){
+                    padding-block: 40px;
+                    margin-inline: 0;
+                    margin-left: 20px;
+                    overflow-x: scroll;
+                }
                 .row{
+                    @media (min-width: 0px) and (max-width: 360px){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // overflow-x: scroll;
+                    }
                     h3{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            margin-left: 20px;
+                            margin-right: 28px;
+                            padding-inline: 0;
+                            color: #000;
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            
+                            /* H4/Medium */
+                            font-family: DINPro;
+                            font-size: 25px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; /* 120% */     
+                            width: 312px;                       
+                        }
                         color: var(--colors-black-base, #000);
                         font-feature-settings: 'clig' off, 'liga' off;
                         
@@ -86,6 +113,17 @@ html{
                         padding-bottom: 22px;
                         span{
                             a{
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    color: var(--colors-purple-app, #7645EF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    
+                                    /* H4/Medium */
+                                    font-family: DINPro;
+                                    font-size: 25px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 30px;                                    
+                                }
                                 color: var(--colors-purple-app, #7645EF);
                                 font-feature-settings: 'clig' off, 'liga' off;
                                 
@@ -101,14 +139,48 @@ html{
                     .col-3{
                         display: flex;
                         padding-inline: 20px;
+                        @media (min-width: 0px) and (max-width: 360px){
+                            display: flex;
+                            flex-direction: column;
+                        }
                         .card{
                             border: none;
                             background-image: url(../images/drags.png);
                             background-repeat: no-repeat;
                             border-radius: 20px;
-                            // border-top-right-radius: 25px;
-                            // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                #cardik{
+
+                                    &:hover .bottom h5 {
+                                        margin-bottom: 72px;
+                                        transition: 700ms;
+                                    }
+                                    &:hover .bottom button{
+                                        border-radius: 1000px;
+                                        background: var(--colors-purple-app, #7645EF);
+                                        
+                                        /* ! */
+                                        box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                        transition: 400ms;                                           
+                                    }
+                                    &:hover .bottom button a{
+                                        color: var(--colors-white-base, #FFF);
+                                        font-feature-settings: 'clig' off, 'liga' off;
+                                        font-family: DINPro;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 20px; /* 111.111% */  
+                                        transition: 400ms;                                          
+                                    }
+                                }
+                                width: 250px;
+                                height: 360px;
+                            }
                             .card-body{
+                                // @media (min-width: 0px) and (max-width: 360px){
+                                    
+                                // }
                                 width: 250px;
                                 height: 360px;
                                 display: flex;
@@ -226,6 +298,31 @@ html{
                             border-radius: 20px;
                             // border-top-right-radius: 25px;
                             // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 180px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
                             .card-body{
                                 width: 250px;
                                 height: 360px;
@@ -344,6 +441,31 @@ html{
                             border-radius: 20px;
                             // border-top-right-radius: 25px;
                             // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 360px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
                             .card-body{
                                 width: 250px;
                                 height: 360px;
@@ -462,6 +584,31 @@ html{
                             border-radius: 20px;
                             // border-top-right-radius: 25px;
                             // border-bottom-right-radius: 25px;
+                            @media (min-width: 0px) and (max-width: 360px){
+                                margin-left: 540px;
+                                &:hover .bottom h5 {
+                                    margin-bottom: 72px;
+                                    transition: 700ms;
+                                }
+                                &:hover .bottom button{
+                                    border-radius: 1000px;
+                                    background: var(--colors-purple-app, #7645EF);
+                                    
+                                    /* ! */
+                                    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05); 
+                                    transition: 400ms;                                           
+                                }
+                                &:hover .bottom button a{
+                                    color: var(--colors-white-base, #FFF);
+                                    font-feature-settings: 'clig' off, 'liga' off;
+                                    font-family: DINPro;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 20px; /* 111.111% */  
+                                    transition: 400ms;                                          
+                                }
+                            }
                             .card-body{
                                 width: 250px;
                                 height: 360px;
@@ -584,15 +731,41 @@ html{
                 margin-inline: 79px;
                 padding-inline: 0;
                 margin-block: 60px;
+                @media (min-width: 0px) and (max-width: 360px){
+                    // display: flex;
+                    // flex-direction: column;
+                }
                 .row{
+                    @media (min-width: 0px) and (max-width: 360px){
+                        display: flex;
+                        flex-direction: column;
+                        // overflow-x: hidden;
+                    }
+                   
                     .col-3{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // display: flex;
+                        }
                         .card{
+                            @media (min-width: 0px) and (max-width: 360px){
+                                width: 320px !important;
+                                // margin-bottom: 250px;
+                                margin-bottom: 30px;
+                                text-align: start;
+                            }
                             border: none;
                             position: relative;
                             .card-body{
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    padding: 0;
+                                }
                                 img{
+                                    @media (min-width: 0px) and (max-width: 360px){
+                                        width: 100% !important;
+                                    }
                                     width: 250px;
                                     height: 220px;
+                                    border-radius: 20px;
                                 }
                                 p{
                                     position: absolute;
@@ -616,6 +789,9 @@ html{
                             .card-footer{
                                 background: transparent;
                                 border: none;
+                                @media (min-width: 0px) and (max-width: 360px){
+                                    padding-left: 0;
+                                }
                                 h5{
                                     margin-bottom: 10px;
                                     color: #000;
@@ -625,7 +801,7 @@ html{
                                     font-family: DINPro;
                                     font-size: 22px;
                                     font-style: normal;
-                                    font-weight: 500;
+                                    font-weight: 600;
                                     line-height: 30px; /* 136.364% */                                    
                                     width: 250px;
                                 }
@@ -644,6 +820,137 @@ html{
                             }
                         }
                     }
+                    .col-9{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // width: 320px;
+                        }
+                    }
+                    .uk-inline{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            // width: 320px;
+                            padding-bottom: 40px;
+                        }
+                        width: 853px;
+                        padding: 0;
+                        margin-top: 40px;
+                        margin-bottom: 169px;
+                        button{
+                            @media (min-width: 0px) and (max-width: 360px){
+                                width: 320px;
+                            }
+                            padding: 14px 30px 16px 30px;
+                            border-radius: 1000px;
+                            border: 1px solid var(--colors-black-10, rgba(0, 0, 0, 0.10));  
+                            width: 100%;
+                            color: var(--colors-black-base, #000);
+                            font-feature-settings: 'clig' off, 'liga' off;
+                            font-family: DINPro;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 200;
+                            line-height: 20px; /* 125% */
+                            text-transform: inherit;                            
+                            &:hover{
+                                background: black;
+                                color: whitesmoke;
+                                transition: 450ms;
+                            }
+                        }
+                        .uk-open{
+                            background: #FFF2DC;
+                            border-radius: 20px;
+                            color: #7645EF;
+                            font-family: DINPro;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;  
+                            line-height: 22px;                          
+                        }
+                    }
+                    // img{
+                    //     background: #000;
+                    //     border-radius: 50%;
+                    //     &:hover{
+                    //         background: #00BEFF;
+                    //         transition: 700ms;
+                    //     }
+                    // }
+                      
+                      
+                      .swiper {
+                        width: 100%;
+                        height: 100%;
+                        
+                      }
+                      
+                      .swiper-slide {
+                        font-size: 18px;
+                        background: #fff;
+                      
+                        /* Center slide text vertically */
+                        display: flex;
+                        justify-content: start;
+                        align-items: start;
+                        
+                      }
+
+                      .swiper-slide-active{
+                          @media (min-width: 0px) and (max-width: 360px){
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
+                      }
+                      
+                      .swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        
+                      }
+                      
+                      .swiper-pagination-bullet {
+                        width: 40px;
+                        height: 40px;
+                        text-align: center;
+                        line-height: 20px;
+                        color: var(--10-black, #000);
+                        text-align: center;
+                        /* T/16 20 (old 18) */
+                        font-family: DINPro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 125% */
+                        opacity: 1;
+                        background: transparent;
+                        padding-top: 10px;
+                        margin-inline: 0;
+                      }
+                      
+                      .swiper-pagination-bullet-active {
+                        color: var(--white, #FFF);
+                        text-align: center;
+                        /* T/16 20 (old 18) */
+                        font-family: DINPro;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 125% */
+                        background: #000; 
+                      }
+                      .swiper-pagination{
+                        @media (min-width: 0px) and (max-width: 360px){
+                            margin-left: -15px;
+                        }
+                        margin-left: -120px;
+                        margin-bottom: 60px;
+                      }
+                    
+                    
+                    
+                   
                 }
             }
         }

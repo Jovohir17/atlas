@@ -1,6 +1,5 @@
 import React from 'react'
-import Api from "./Components/Api"
-import Master from './Components/Master'
+import Master from './Pages/Master'
 
 function App() {
   return (

@@ -1,14 +1,38 @@
-import React from 'react'
+// import React from 'react'
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import Swiper styles
+import 'swiper/css';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 function Main() {
+    
+
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    };
+
   return (
     <>
         <header>
             <div className="container">
                 <div className="row">
-                    <h3>Управляйте вашим здоровьем <span><a href="#!">с тестами Атлас</a></span></h3>
-                    <div className="col-3">
-                        <div className="card">
+                    <h3 className='animate__animated animate__slideInLeft '>Управляйте вашим здоровьем <span><a href="#!">с тестами Атлас</a></span></h3>
+                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-2s ">
+                        <div className="card" id='cardik'>
                             <div className="card-body">
                                 <div className="top">
                                     <h4 className="text-center">
@@ -27,7 +51,7 @@ function Main() {
                             </div>
                         </div>
                     </div> 
-                    <div className="col-3">
+                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-3s">
                         <div className="card card__1">
                             <div className="card-body">
                                 <div className="top">
@@ -47,7 +71,7 @@ function Main() {
                             </div>
                         </div>
                     </div> 
-                    <div className="col-3">
+                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-4s">
                         <div className="card card__2">
                             <div className="card-body">
                                 <div className="top">
@@ -67,7 +91,7 @@ function Main() {
                             </div>
                         </div>
                     </div> 
-                    <div className="col-3">
+                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-5s">
                         <div className="card card__3">
                             <div className="card-body">
                                 <div className="top">
@@ -91,9 +115,22 @@ function Main() {
             </div>
         </header>
         <main>
-            <div className="container">
-                <div className="row">
-                    <div className="col-3">
+            <div className="container" >
+                <div className="row animate__animated wow animate__bounceInLeft animate__slow" >
+
+
+                    
+                    
+
+
+                    <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+
+        <div className="col-3 ">
                         <div className="card">
                             <div className="card-body">
                                 <img src="../images/tron.png" alt="Error" />
@@ -176,6 +213,972 @@ function Main() {
 
                         </div>
                     </div>
+
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide><div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+                   
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    
+        </SwiperSlide>
+         <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    
+        </SwiperSlide>
+         <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    
+        </SwiperSlide>
+         <SwiperSlide>
+            <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/tron.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/sabza.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/gen.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>9 апреля • 8 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>генетика</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>19 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div className="col-3">
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/goliy.png" alt="Error" />
+                                <p>днк</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Развенчиваем мифы о ДНК-тестах</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                        <div className="card">
+                            <div className="card-body">
+                                <img src="../images/milk.png" alt="Error" />
+                                <p>Питание</p>
+                            </div>
+
+                            <div className="card-footer">
+                                <h5>Ожирение ч. 2: риски, генетика, и лечение</h5>
+                                <h6>5 марта • 15 мин</h6>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+
+
+                    
+        </SwiperSlide>
+
+        <div className="col-9 animate__animated animate__bounce wow animate__delay-5s animate__repeat-2">
+                <div class="uk-inline">
+                        <button class="uk-button uk-button-default" type="button">Показать ещё</button>
+                        <div class="uk-card uk-card-body uk-card-default" uk-drop="mode: click">Что бы узнать больше информации, нажмите кнопки с цифрами ниже.</div>
+                    </div>
+            </div>
+
+
+            {/* <img src="../images/cart.svg" alt="Error" /> */}
+                    
+      </Swiper>
+                    
+            
+
                 </div>
             </div>
         </main>
