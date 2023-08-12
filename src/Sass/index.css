@@ -42,16 +42,16 @@ html {
 html body {
   max-width: 1280px;
 }
-html body header {
+html body article {
   background: var(--colors-grey-medium, #F5F5F5);
 }
-html body header .container {
+html body article .container {
   padding-block: 60px;
   margin-inline: 79px;
   padding-inline: 0;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container {
+  html body article .container {
     padding-block: 40px;
     margin-inline: 0;
     margin-left: 20px;
@@ -59,13 +59,13 @@ html body header .container {
   }
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row {
+  html body article .container .row {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-html body header .container .row h3 {
+html body article .container .row h3 {
   color: var(--colors-black-base, #000);
   font-feature-settings: "clig" off, "liga" off;
   /* H3/Medium */
@@ -77,7 +77,7 @@ html body header .container .row h3 {
   padding-bottom: 22px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row h3 {
+  html body article .container .row h3 {
     margin-left: 20px;
     margin-right: 28px;
     padding-inline: 0;
@@ -92,7 +92,7 @@ html body header .container .row h3 {
     width: 312px;
   }
 }
-html body header .container .row h3 span a {
+html body article .container .row h3 span a {
   color: var(--colors-purple-app, #7645EF);
   font-feature-settings: "clig" off, "liga" off;
   /* H3/Medium */
@@ -103,7 +103,7 @@ html body header .container .row h3 span a {
   line-height: 40px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row h3 span a {
+  html body article .container .row h3 span a {
     color: var(--colors-purple-app, #7645EF);
     font-feature-settings: "clig" off, "liga" off;
     /* H4/Medium */
@@ -114,39 +114,39 @@ html body header .container .row h3 span a {
     line-height: 30px;
   }
 }
-html body header .container .row .col-3 {
+html body article .container .row .col-3 {
   display: flex;
   padding-inline: 20px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row .col-3 {
+  html body article .container .row .col-3 {
     display: flex;
     flex-direction: column;
   }
 }
-html body header .container .row .col-3 .card {
+html body article .container .row .col-3 .card {
   border: none;
   background-image: url(../images/drags.png);
   background-repeat: no-repeat;
   border-radius: 20px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row .col-3 .card {
+  html body article .container .row .col-3 .card {
     width: 250px;
     height: 360px;
   }
-  html body header .container .row .col-3 .card #cardik:hover .bottom h5 {
+  html body article .container .row .col-3 .card #cardik:hover .bottom h5 {
     margin-bottom: 72px;
     transition: 700ms;
   }
-  html body header .container .row .col-3 .card #cardik:hover .bottom button {
+  html body article .container .row .col-3 .card #cardik:hover .bottom button {
     border-radius: 1000px;
     background: var(--colors-purple-app, #7645EF);
     /* ! */
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
     transition: 400ms;
   }
-  html body header .container .row .col-3 .card #cardik:hover .bottom button a {
+  html body article .container .row .col-3 .card #cardik:hover .bottom button a {
     color: var(--colors-white-base, #FFF);
     font-feature-settings: "clig" off, "liga" off;
     font-family: DINPro;
@@ -157,25 +157,25 @@ html body header .container .row .col-3 .card {
     transition: 400ms;
   }
 }
-html body header .container .row .col-3 .card .card-body {
+html body article .container .row .col-3 .card .card-body {
   width: 250px;
   height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html body header .container .row .col-3 .card .card-body:hover .bottom h5 {
+html body article .container .row .col-3 .card .card-body:hover .bottom h5 {
   margin-bottom: 72px;
   transition: 700ms;
 }
-html body header .container .row .col-3 .card .card-body:hover .bottom button {
+html body article .container .row .col-3 .card .card-body:hover .bottom button {
   border-radius: 1000px;
   background: var(--colors-purple-app, #7645EF);
   /* ! */
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
   transition: 400ms;
 }
-html body header .container .row .col-3 .card .card-body:hover .bottom button a {
+html body article .container .row .col-3 .card .card-body:hover .bottom button a {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -185,7 +185,7 @@ html body header .container .row .col-3 .card .card-body:hover .bottom button a 
   line-height: 20px; /* 111.111% */
   transition: 400ms;
 }
-html body header .container .row .col-3 .card .card-body .top h4 {
+html body article .container .row .col-3 .card .card-body .top h4 {
   color: #FFF;
   text-align: center;
   font-family: Ubuntu;
@@ -196,10 +196,10 @@ html body header .container .row .col-3 .card .card-body .top h4 {
   letter-spacing: 1.17px;
   line-height: 22px;
 }
-html body header .container .row .col-3 .card .card-body .bottom .cost {
+html body article .container .row .col-3 .card .card-body .bottom .cost {
   display: flex;
 }
-html body header .container .row .col-3 .card .card-body .bottom .cost p {
+html body article .container .row .col-3 .card .card-body .bottom .cost p {
   display: flex;
   color: var(--colors-white-30, rgba(255, 255, 255, 0.3));
   font-feature-settings: "clig" off, "liga" off;
@@ -211,7 +211,7 @@ html body header .container .row .col-3 .card .card-body .bottom .cost p {
   text-decoration: line-through !important;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card .card-body .bottom .cost h6 {
+html body article .container .row .col-3 .card .card-body .bottom .cost h6 {
   border-radius: 4px;
   background: var(--colors-pink-base, #E961A0);
   color: var(--colors-white-base, #FFF);
@@ -227,7 +227,7 @@ html body header .container .row .col-3 .card .card-body .bottom .cost h6 {
   height: 18px;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card .card-body .bottom h5 {
+html body article .container .row .col-3 .card .card-body .bottom h5 {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   /* H4/Bold */
@@ -238,7 +238,7 @@ html body header .container .row .col-3 .card .card-body .bottom h5 {
   line-height: 30px; /* 120% */
   margin-bottom: 20px;
 }
-html body header .container .row .col-3 .card .card-body .bottom button {
+html body article .container .row .col-3 .card .card-body .bottom button {
   border-radius: 1000px;
   background: var(--colors-white-base, #FFF);
   /* ! */
@@ -247,7 +247,7 @@ html body header .container .row .col-3 .card .card-body .bottom button {
   border: none;
   width: 100%;
 }
-html body header .container .row .col-3 .card .card-body .bottom button a {
+html body article .container .row .col-3 .card .card-body .bottom button a {
   color: var(--colors-black-base, #000);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -256,28 +256,28 @@ html body header .container .row .col-3 .card .card-body .bottom button a {
   font-weight: 400;
   line-height: 20px; /* 111.111% */
 }
-html body header .container .row .col-3 .card__1 {
+html body article .container .row .col-3 .card__1 {
   border: none;
   background-image: url(../images/seriy.png);
   background-repeat: no-repeat;
   border-radius: 20px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row .col-3 .card__1 {
+  html body article .container .row .col-3 .card__1 {
     margin-left: 180px;
   }
-  html body header .container .row .col-3 .card__1:hover .bottom h5 {
+  html body article .container .row .col-3 .card__1:hover .bottom h5 {
     margin-bottom: 72px;
     transition: 700ms;
   }
-  html body header .container .row .col-3 .card__1:hover .bottom button {
+  html body article .container .row .col-3 .card__1:hover .bottom button {
     border-radius: 1000px;
     background: var(--colors-purple-app, #7645EF);
     /* ! */
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
     transition: 400ms;
   }
-  html body header .container .row .col-3 .card__1:hover .bottom button a {
+  html body article .container .row .col-3 .card__1:hover .bottom button a {
     color: var(--colors-white-base, #FFF);
     font-feature-settings: "clig" off, "liga" off;
     font-family: DINPro;
@@ -288,25 +288,25 @@ html body header .container .row .col-3 .card__1 {
     transition: 400ms;
   }
 }
-html body header .container .row .col-3 .card__1 .card-body {
+html body article .container .row .col-3 .card__1 .card-body {
   width: 250px;
   height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html body header .container .row .col-3 .card__1 .card-body:hover .bottom h5 {
+html body article .container .row .col-3 .card__1 .card-body:hover .bottom h5 {
   margin-bottom: 72px;
   transition: 700ms;
 }
-html body header .container .row .col-3 .card__1 .card-body:hover .bottom button {
+html body article .container .row .col-3 .card__1 .card-body:hover .bottom button {
   border-radius: 1000px;
   background: var(--colors-purple-app, #7645EF);
   /* ! */
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__1 .card-body:hover .bottom button a {
+html body article .container .row .col-3 .card__1 .card-body:hover .bottom button a {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -316,7 +316,7 @@ html body header .container .row .col-3 .card__1 .card-body:hover .bottom button
   line-height: 20px; /* 111.111% */
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__1 .card-body .top h4 {
+html body article .container .row .col-3 .card__1 .card-body .top h4 {
   color: #EAFC7A;
   text-align: center;
   font-family: Ubuntu;
@@ -327,10 +327,10 @@ html body header .container .row .col-3 .card__1 .card-body .top h4 {
   letter-spacing: 0.17px;
   line-height: 20px;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom .cost {
+html body article .container .row .col-3 .card__1 .card-body .bottom .cost {
   display: flex;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom .cost p {
+html body article .container .row .col-3 .card__1 .card-body .bottom .cost p {
   display: flex;
   color: var(--colors-white-30, rgba(255, 255, 255, 0.3));
   font-feature-settings: "clig" off, "liga" off;
@@ -342,7 +342,7 @@ html body header .container .row .col-3 .card__1 .card-body .bottom .cost p {
   text-decoration: line-through !important;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom .cost h6 {
+html body article .container .row .col-3 .card__1 .card-body .bottom .cost h6 {
   border-radius: 4px;
   background: var(--colors-pink-base, #E961A0);
   color: var(--colors-white-base, #FFF);
@@ -358,7 +358,7 @@ html body header .container .row .col-3 .card__1 .card-body .bottom .cost h6 {
   height: 18px;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom h5 {
+html body article .container .row .col-3 .card__1 .card-body .bottom h5 {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   /* H4/Bold */
@@ -369,7 +369,7 @@ html body header .container .row .col-3 .card__1 .card-body .bottom h5 {
   line-height: 30px; /* 120% */
   margin-bottom: 20px;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom button {
+html body article .container .row .col-3 .card__1 .card-body .bottom button {
   border-radius: 1000px;
   background: var(--colors-white-base, #FFF);
   /* ! */
@@ -378,7 +378,7 @@ html body header .container .row .col-3 .card__1 .card-body .bottom button {
   border: none;
   width: 100%;
 }
-html body header .container .row .col-3 .card__1 .card-body .bottom button a {
+html body article .container .row .col-3 .card__1 .card-body .bottom button a {
   color: var(--colors-black-base, #000);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -387,28 +387,28 @@ html body header .container .row .col-3 .card__1 .card-body .bottom button a {
   font-weight: 400;
   line-height: 20px; /* 111.111% */
 }
-html body header .container .row .col-3 .card__2 {
+html body article .container .row .col-3 .card__2 {
   border: none;
   background-image: url(../images/black.png);
   background-repeat: no-repeat;
   border-radius: 20px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row .col-3 .card__2 {
+  html body article .container .row .col-3 .card__2 {
     margin-left: 360px;
   }
-  html body header .container .row .col-3 .card__2:hover .bottom h5 {
+  html body article .container .row .col-3 .card__2:hover .bottom h5 {
     margin-bottom: 72px;
     transition: 700ms;
   }
-  html body header .container .row .col-3 .card__2:hover .bottom button {
+  html body article .container .row .col-3 .card__2:hover .bottom button {
     border-radius: 1000px;
     background: var(--colors-purple-app, #7645EF);
     /* ! */
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
     transition: 400ms;
   }
-  html body header .container .row .col-3 .card__2:hover .bottom button a {
+  html body article .container .row .col-3 .card__2:hover .bottom button a {
     color: var(--colors-white-base, #FFF);
     font-feature-settings: "clig" off, "liga" off;
     font-family: DINPro;
@@ -419,25 +419,25 @@ html body header .container .row .col-3 .card__2 {
     transition: 400ms;
   }
 }
-html body header .container .row .col-3 .card__2 .card-body {
+html body article .container .row .col-3 .card__2 .card-body {
   width: 250px;
   height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html body header .container .row .col-3 .card__2 .card-body:hover .bottom h5 {
+html body article .container .row .col-3 .card__2 .card-body:hover .bottom h5 {
   margin-bottom: 72px;
   transition: 700ms;
 }
-html body header .container .row .col-3 .card__2 .card-body:hover .bottom button {
+html body article .container .row .col-3 .card__2 .card-body:hover .bottom button {
   border-radius: 1000px;
   background: var(--colors-purple-app, #7645EF);
   /* ! */
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__2 .card-body:hover .bottom button a {
+html body article .container .row .col-3 .card__2 .card-body:hover .bottom button a {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -447,7 +447,7 @@ html body header .container .row .col-3 .card__2 .card-body:hover .bottom button
   line-height: 20px; /* 111.111% */
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__2 .card-body .top h4 {
+html body article .container .row .col-3 .card__2 .card-body .top h4 {
   color: #FFF;
   text-align: center;
   font-family: Ubuntu;
@@ -458,10 +458,10 @@ html body header .container .row .col-3 .card__2 .card-body .top h4 {
   letter-spacing: 1.17px;
   line-height: 22px;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom .cost {
+html body article .container .row .col-3 .card__2 .card-body .bottom .cost {
   display: flex;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom .cost p {
+html body article .container .row .col-3 .card__2 .card-body .bottom .cost p {
   display: flex;
   color: var(--colors-white-30, rgba(255, 255, 255, 0.3));
   font-feature-settings: "clig" off, "liga" off;
@@ -473,7 +473,7 @@ html body header .container .row .col-3 .card__2 .card-body .bottom .cost p {
   text-decoration: line-through !important;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom .cost h6 {
+html body article .container .row .col-3 .card__2 .card-body .bottom .cost h6 {
   border-radius: 4px;
   background: var(--colors-pink-base, #E961A0);
   color: var(--colors-white-base, #FFF);
@@ -489,7 +489,7 @@ html body header .container .row .col-3 .card__2 .card-body .bottom .cost h6 {
   height: 18px;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom h5 {
+html body article .container .row .col-3 .card__2 .card-body .bottom h5 {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   /* H4/Bold */
@@ -500,7 +500,7 @@ html body header .container .row .col-3 .card__2 .card-body .bottom h5 {
   line-height: 30px; /* 120% */
   margin-bottom: 20px;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom button {
+html body article .container .row .col-3 .card__2 .card-body .bottom button {
   border-radius: 1000px;
   background: var(--colors-white-base, #FFF);
   /* ! */
@@ -509,7 +509,7 @@ html body header .container .row .col-3 .card__2 .card-body .bottom button {
   border: none;
   width: 100%;
 }
-html body header .container .row .col-3 .card__2 .card-body .bottom button a {
+html body article .container .row .col-3 .card__2 .card-body .bottom button a {
   color: var(--colors-black-base, #000);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -518,28 +518,28 @@ html body header .container .row .col-3 .card__2 .card-body .bottom button a {
   font-weight: 400;
   line-height: 20px; /* 111.111% */
 }
-html body header .container .row .col-3 .card__3 {
+html body article .container .row .col-3 .card__3 {
   border: none;
   background-image: url(../images/dnk.png);
   background-repeat: no-repeat;
   border-radius: 20px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
-  html body header .container .row .col-3 .card__3 {
+  html body article .container .row .col-3 .card__3 {
     margin-left: 540px;
   }
-  html body header .container .row .col-3 .card__3:hover .bottom h5 {
+  html body article .container .row .col-3 .card__3:hover .bottom h5 {
     margin-bottom: 72px;
     transition: 700ms;
   }
-  html body header .container .row .col-3 .card__3:hover .bottom button {
+  html body article .container .row .col-3 .card__3:hover .bottom button {
     border-radius: 1000px;
     background: var(--colors-purple-app, #7645EF);
     /* ! */
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
     transition: 400ms;
   }
-  html body header .container .row .col-3 .card__3:hover .bottom button a {
+  html body article .container .row .col-3 .card__3:hover .bottom button a {
     color: var(--colors-white-base, #FFF);
     font-feature-settings: "clig" off, "liga" off;
     font-family: DINPro;
@@ -550,25 +550,25 @@ html body header .container .row .col-3 .card__3 {
     transition: 400ms;
   }
 }
-html body header .container .row .col-3 .card__3 .card-body {
+html body article .container .row .col-3 .card__3 .card-body {
   width: 250px;
   height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html body header .container .row .col-3 .card__3 .card-body:hover .bottom h5 {
+html body article .container .row .col-3 .card__3 .card-body:hover .bottom h5 {
   margin-bottom: 72px;
   transition: 700ms;
 }
-html body header .container .row .col-3 .card__3 .card-body:hover .bottom button {
+html body article .container .row .col-3 .card__3 .card-body:hover .bottom button {
   border-radius: 1000px;
   background: var(--colors-purple-app, #7645EF);
   /* ! */
   box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.05);
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__3 .card-body:hover .bottom button a {
+html body article .container .row .col-3 .card__3 .card-body:hover .bottom button a {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;
@@ -578,7 +578,7 @@ html body header .container .row .col-3 .card__3 .card-body:hover .bottom button
   line-height: 20px; /* 111.111% */
   transition: 400ms;
 }
-html body header .container .row .col-3 .card__3 .card-body .top h4 {
+html body article .container .row .col-3 .card__3 .card-body .top h4 {
   color: #FFF;
   text-align: center;
   font-family: Ubuntu;
@@ -590,10 +590,10 @@ html body header .container .row .col-3 .card__3 .card-body .top h4 {
   width: 209px;
   text-transform: lowercase;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom .cost {
+html body article .container .row .col-3 .card__3 .card-body .bottom .cost {
   display: flex;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom .cost p {
+html body article .container .row .col-3 .card__3 .card-body .bottom .cost p {
   display: flex;
   color: var(--colors-white-30, rgba(255, 255, 255, 0.3));
   font-feature-settings: "clig" off, "liga" off;
@@ -605,7 +605,7 @@ html body header .container .row .col-3 .card__3 .card-body .bottom .cost p {
   text-decoration: line-through !important;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom .cost h6 {
+html body article .container .row .col-3 .card__3 .card-body .bottom .cost h6 {
   border-radius: 4px;
   background: var(--colors-pink-base, #E961A0);
   color: var(--colors-white-base, #FFF);
@@ -621,7 +621,7 @@ html body header .container .row .col-3 .card__3 .card-body .bottom .cost h6 {
   height: 18px;
   margin-bottom: 0;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom h5 {
+html body article .container .row .col-3 .card__3 .card-body .bottom h5 {
   color: var(--colors-white-base, #FFF);
   font-feature-settings: "clig" off, "liga" off;
   /* H4/Bold */
@@ -632,7 +632,7 @@ html body header .container .row .col-3 .card__3 .card-body .bottom h5 {
   line-height: 30px; /* 120% */
   margin-bottom: 20px;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom button {
+html body article .container .row .col-3 .card__3 .card-body .bottom button {
   border-radius: 1000px;
   background: var(--colors-white-base, #FFF);
   /* ! */
@@ -641,7 +641,7 @@ html body header .container .row .col-3 .card__3 .card-body .bottom button {
   border: none;
   width: 100%;
 }
-html body header .container .row .col-3 .card__3 .card-body .bottom button a {
+html body article .container .row .col-3 .card__3 .card-body .bottom button a {
   color: var(--colors-black-base, #000);
   font-feature-settings: "clig" off, "liga" off;
   font-family: DINPro;

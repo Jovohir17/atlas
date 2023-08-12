@@ -27,7 +27,7 @@ function Main() {
 
   return (
     <>
-        <header>
+        <article>
             <div className="container">
                 <div className="row">
                     <h3 className='animate__animated animate__slideInLeft '>Управляйте вашим здоровьем <span><a href="#!">с тестами Атлас</a></span></h3>
@@ -113,7 +113,7 @@ function Main() {
                     </div>
                 </div>
             </div>
-        </header>
+        </article>
         <main>
             <div className="container" >
                 <div className="row animate__animated wow animate__bounceInLeft animate__slow" >
