@@ -50,12 +50,15 @@ html body article .container {
   margin-inline: 79px;
   padding-inline: 0;
 }
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container {
+    margin: 0;
+  }
+}
 @media (min-width: 0px) and (max-width: 360px) {
   html body article .container {
     padding-block: 40px;
     margin-inline: 0;
-    margin-left: 20px;
-    overflow-x: scroll;
   }
 }
 @media (min-width: 0px) and (max-width: 360px) {
@@ -63,6 +66,7 @@ html body article .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
 }
 html body article .container .row h3 {
@@ -75,6 +79,11 @@ html body article .container .row h3 {
   font-weight: 500;
   line-height: 40px; /* 114.286% */
   padding-bottom: 22px;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container .row h3 {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body article .container .row h3 {
@@ -90,6 +99,12 @@ html body article .container .row h3 {
     font-weight: 500;
     line-height: 30px; /* 120% */
     width: 312px;
+  }
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container .row h3 {
+    font-size: 28px;
+    width: 400px;
   }
 }
 html body article .container .row h3 span a {
@@ -114,9 +129,30 @@ html body article .container .row h3 span a {
     line-height: 30px;
   }
 }
+html body article .container .row .scrollll {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 360px) {
+  html body article .container .row .scrollll {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container .row .scrollll {
+    width: 576px;
+    overflow-x: scroll;
+    gap: 140px;
+  }
+}
 html body article .container .row .col-3 {
   display: flex;
   padding-inline: 20px;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container .row .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body article .container .row .col-3 {
@@ -129,6 +165,12 @@ html body article .container .row .col-3 .card {
   background-image: url(../images/drags.png);
   background-repeat: no-repeat;
   border-radius: 20px;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body article .container .row .col-3 .card {
+    width: 250px;
+    height: 360px;
+  }
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body article .container .row .col-3 .card {
@@ -650,20 +692,34 @@ html body article .container .row .col-3 .card__3 .card-body .bottom button a {
   font-weight: 400;
   line-height: 20px; /* 111.111% */
 }
+html body main {
+  background: white;
+}
 html body main .container {
   margin-inline: 79px;
   padding-inline: 0;
   margin-block: 60px;
 }
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container {
+    margin-inline: 21px;
+  }
+}
 @media (min-width: 0px) and (max-width: 360px) {
   html body main .container .row {
     display: flex;
     flex-direction: column;
+    width: 360px;
   }
 }
 html body main .container .row .col-3 .card {
   border: none;
   position: relative;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .col-3 .card {
+    width: 520px !important;
+  }
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body main .container .row .col-3 .card {
@@ -681,6 +737,11 @@ html body main .container .row .col-3 .card .card-body img {
   width: 250px;
   height: 220px;
   border-radius: 20px;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .col-3 .card .card-body img {
+    width: 100%;
+  }
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body main .container .row .col-3 .card .card-body img {
@@ -727,6 +788,13 @@ html body main .container .row .col-3 .card .card-footer h5 {
   line-height: 30px; /* 136.364% */
   width: 250px;
 }
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .col-3 .card .card-footer h5 {
+    font-size: 28px;
+    font-weight: 700;
+    width: 460px;
+  }
+}
 html body main .container .row .col-3 .card .card-footer h6 {
   color: #000;
   font-feature-settings: "clig" off, "liga" off;
@@ -738,6 +806,17 @@ html body main .container .row .col-3 .card .card-footer h6 {
   line-height: 24px; /* 133.333% */
   opacity: 0.400000006;
   margin: 0;
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .col-3 .card .card-footer h6 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .col-9 {
+    margin: 0 auto;
+  }
 }
 html body main .container .row .uk-inline {
   width: 853px;
@@ -796,6 +875,11 @@ html body main .container .row .swiper-slide {
   justify-content: start;
   align-items: start;
 }
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .swiper-slide {
+    flex-direction: column;
+  }
+}
 @media (min-width: 0px) and (max-width: 360px) {
   html body main .container .row .swiper-slide-active {
     display: flex;
@@ -839,12 +923,22 @@ html body main .container .row .swiper-pagination-bullet-active {
   line-height: 20px; /* 125% */
   background: #000;
 }
+@media (min-width: 0px) and (max-width: 360px) {
+  html body main .container .row .swiper-slide-prev {
+    width: 359px !important;
+  }
+}
 html body main .container .row .swiper-pagination {
   margin-left: -120px;
   margin-bottom: 60px;
 }
 @media (min-width: 0px) and (max-width: 360px) {
   html body main .container .row .swiper-pagination {
-    margin-left: -15px;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 361px) and (max-width: 576px) {
+  html body main .container .row .swiper-pagination {
+    margin-left: -20px;
   }
 }/*# sourceMappingURL=index.css.map */

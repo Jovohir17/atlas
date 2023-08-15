@@ -6,8 +6,8 @@ import Mainn from '../componentss/Mainn'
 function Master() {
   return (
     <>
-      <Header/>
-      <Mainn/>
+      {/* <Header/>
+      <Mainn/> */}
       <Main/>
     </>
   )

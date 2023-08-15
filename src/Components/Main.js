@@ -31,6 +31,9 @@ function Main() {
             <div className="container">
                 <div className="row">
                     <h3 className='animate__animated animate__slideInLeft '>Управляйте вашим здоровьем <span><a href="#!">с тестами Атлас</a></span></h3>
+
+                    
+                    <div className="scrollll">
                     <div className="col-3 animate__animated wow animate__rollIn animate__delay-2s ">
                         <div className="card" id='cardik'>
                             <div className="card-body">
@@ -51,62 +54,64 @@ function Main() {
                             </div>
                         </div>
                     </div> 
-                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-3s">
-                        <div className="card card__1">
-                            <div className="card-body">
-                                <div className="top">
-                                    <h4 className="text-center">
-                                    Тест <br />
-                                    Микробиоты
-                                    </h4>
-                                </div>
-                                <div className="bottom">
-                                    <div className="cost">
-                                        <p>18 900 ₽ </p>
-                                        <h6>-26%</h6>
+
+                        <div className="col-3 animate__animated wow animate__rollIn animate__delay-3s">
+                            <div className="card card__1">
+                                <div className="card-body">
+                                    <div className="top">
+                                        <h4 className="text-center">
+                                        Тест <br />
+                                        Микробиоты
+                                        </h4>
                                     </div>
-                                    <h5>13 999 <span>₽</span></h5>
-                                    <button><a href="#!">Подробнее</a></button>
+                                    <div className="bottom">
+                                        <div className="cost">
+                                            <p>18 900 ₽ </p>
+                                            <h6>-26%</h6>
+                                        </div>
+                                        <h5>13 999 <span>₽</span></h5>
+                                        <button><a href="#!">Подробнее</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-4s">
-                        <div className="card card__2">
-                            <div className="card-body">
-                                <div className="top">
-                                    <h4 className="text-center">
-                                    Тест Полный  <br />
-                                    геном
-                                    </h4>
-                                </div>
-                                <div className="bottom">
-                                    <div className="cost">
-                                        <p>139 000 ₽ </p>
-                                        <h6>-29%</h6>
+                        <div className="col-3 animate__animated wow animate__rollIn animate__delay-4s">
+                            <div className="card card__2">
+                                <div className="card-body">
+                                    <div className="top">
+                                        <h4 className="text-center">
+                                        Тест Полный  <br />
+                                        геном
+                                        </h4>
                                     </div>
-                                    <h5>98 999 <span>₽</span></h5>
-                                    <button><a href="#!">Подробнее</a></button>
+                                    <div className="bottom">
+                                        <div className="cost">
+                                            <p>139 000 ₽ </p>
+                                            <h6>-29%</h6>
+                                        </div>
+                                        <h5>98 999 <span>₽</span></h5>
+                                        <button><a href="#!">Подробнее</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    <div className="col-3 animate__animated wow animate__rollIn animate__delay-5s">
-                        <div className="card card__3">
-                            <div className="card-body">
-                                <div className="top">
-                                    <h4 className="text-center">
-                                    Интерпретируем  <br />
-                                    данные других
-                                    </h4>
-                                </div>
-                                <div className="bottom">
-                                    <div className="cost">
-                                        <p>8 900 ₽ </p>
-                                        <h6>-35%</h6>
+                        <div className="col-3 animate__animated wow animate__rollIn animate__delay-5s">
+                            <div className="card card__3">
+                                <div className="card-body">
+                                    <div className="top">
+                                        <h4 className="text-center">
+                                        Интерпретируем  <br />
+                                        данные других
+                                        </h4>
                                     </div>
-                                    <h5>5000 <span>₽</span></h5>
-                                    <button><a href="#!">Подробнее</a></button>
+                                    <div className="bottom">
+                                        <div className="cost">
+                                            <p>8 900 ₽ </p>
+                                            <h6>-35%</h6>
+                                        </div>
+                                        <h5>5000 <span>₽</span></h5>
+                                        <button><a href="#!">Подробнее</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
